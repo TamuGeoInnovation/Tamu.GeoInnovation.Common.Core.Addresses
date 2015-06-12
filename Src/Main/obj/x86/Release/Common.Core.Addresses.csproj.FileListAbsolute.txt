@@ -1,0 +1,4 @@
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Addresses\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Addresses.dll.config
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Addresses\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Addresses.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Addresses\Src\Main\obj\x86\Release\Tamu.GeoInnovation.Common.Core.Addresses.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Addresses\Src\Main\obj\x86\Release\Common.Core.Addresses.csprojResolveAssemblyReference.cache

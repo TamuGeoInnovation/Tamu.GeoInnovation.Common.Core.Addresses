@@ -1,0 +1,22 @@
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\License.txt
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\Readme.txt
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\SQL Scripts\aggregate_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\SQL Scripts\makevalid_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\SQL Scripts\projection_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\SQL Scripts\Register.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\SQL Scripts\transform_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\SQL Scripts\Unregister.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Geo.dll.config
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Geo.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Geo.pdb
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\src\obj\x86\Debug\Common.Core.Geo.csprojResolveAssemblyReference.cache
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.Geo.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.Geo.pdb
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\build\v1.1\bin\x86\debug\Tamu.GeoInnovation.Common.Core.Geo.dll.config
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\build\v1.1\bin\x86\debug\Tamu.GeoInnovation.Common.Core.Geo.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\build\v1.1\bin\x86\debug\Tamu.GeoInnovation.Common.Core.Geo.pdb
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\Main\obj\x86\Debug\Tamu.GeoInnovation.Common.Core.Geo.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\Main\obj\x86\Debug\Tamu.GeoInnovation.Common.Core.Geo.pdb
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Geo.dll.config
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Geo.dll
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Geo.pdb

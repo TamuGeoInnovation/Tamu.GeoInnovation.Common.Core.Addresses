@@ -1,0 +1,12 @@
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\License.txt
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\Readme.txt
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\SQL Scripts\aggregate_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\SQL Scripts\makevalid_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\SQL Scripts\projection_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\SQL Scripts\Register.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\SQL Scripts\transform_example.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\SQL Scripts\Unregister.sql
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\USC.GISResearchLab.Common.Core.Geo.dll.config
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\build\v1.1\bin\AnyCPU\release\USC.GISResearchLab.Common.Core.Geo.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\src\obj\Release\Common.Core.Geo.csprojResolveAssemblyReference.cache
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Geo\src\obj\Release\USC.GISResearchLab.Common.Core.Geo.dll
