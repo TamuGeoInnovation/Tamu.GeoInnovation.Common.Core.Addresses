@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <!--  <UsingTask TaskName="USC.GISResearchLab.Common.BuildTasks.AutoIncrementBuildNumber" AssemblyFile="USC.GISResearchLab.Common.BuildTasks.dll" /> -->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29C0949B-4D41-4138-B59B-6DE4A6A1774E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tamu.GeoInnovation.Common.Core.Addresses</RootNamespace>
+    <AssemblyName>Tamu.GeoInnovation.Common.Core.Addresses</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\1.0.0\AnyCPU\debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\build\1.0.0\AnyCPU\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>168,219,114,108</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Addresses\build\1.0.0\debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Addresses\build\1.0.0\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>168,219,114,108</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="SQLSpatialTools">
+      <HintPath>..\..\..\..\..\..\..\..\DevDependencies\SQLServer\SQLSpatialTools\build\v1.0\bin\AnyCPU\release\SQLSpatialTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tamu.GeoInnovation.Common.Core.Colors">
+      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Colors\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Colors.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tamu.GeoInnovation.Common.Core.Drawing">
+      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Drawing\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tamu.GeoInnovation.Common.Core.ExceptionHandling">
+      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\ExceptionHandling\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.ExceptionHandling.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tamu.GeoInnovation.Common.Core.Security">
+      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Security\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tamu.GeoInnovation.Common.Core.Threading">
+      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Threading\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tamu.GeoInnovation.Common.Core.Utils">
+      <HintPath>..\..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Utils\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addresses\AbstractClasses\AbstractStreetAddress.cs" />
+    <Compile Include="Addresses\AbstractClasses\AbstractStreetAddressBase.cs" />
+    <Compile Include="Addresses\AddressCompletedProgressState.cs" />
+    <Compile Include="Addresses\AddressComponentManager.cs" />
+    <Compile Include="Addresses\Interfaces\IStreetAddress.cs" />
+    <Compile Include="Addresses\Interfaces\IStreetAddressBase.cs" />
+    <Compile Include="Addresses\RelaxableStreetAddress.cs" />
+    <Compile Include="Addresses\StreetAddress.cs" />
+    <Compile Include="Addresses\StreetAddressRelaxer.cs" />
+    <Compile Include="Addresses\ValidateableStreetAddress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="LICENSE.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!--  
+  <Target Name="BeforeBuild">
+    <AutoIncrementBuildNumber AssemblyFileLocation="$(MSBuildProjectDirectory)\Properties\AssemblyInfo.cs" ExecuteFileLocation="$(TargetPath)" />
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
