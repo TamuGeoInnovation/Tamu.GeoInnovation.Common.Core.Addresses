@@ -1,3 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Addresses\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Addresses.dll.config
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Addresses\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Addresses.dll
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Addresses\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Addresses.dll

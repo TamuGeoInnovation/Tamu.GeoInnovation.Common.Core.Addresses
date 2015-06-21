@@ -1,5 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\build\v1.1\bin\x86\release\Tamu.GeoInnovation.Common.Core.Geo.dll.config
-C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\build\v1.1\bin\x86\release\Tamu.GeoInnovation.Common.Core.Geo.dll
-C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo\Src\Main\obj\x86\Release\Tamu.GeoInnovation.Common.Core.Geo.dll
-C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.dll.config
-C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.dll
