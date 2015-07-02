@@ -24,7 +24,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -86,10 +86,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="SQLSpatialTools">
-      <HintPath>..\..\..\..\..\..\..\..\DevDependencies\SQLServer\SQLSpatialTools\build\v1.0\bin\AnyCPU\release\SQLSpatialTools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -143,7 +139,6 @@
     <ProjectReference Include="..\..\..\Common.Core.Threading\Src\Main\Common.Core.Threading.Dev.csproj">
       <Project>{FE6237ED-DCBB-43F5-A216-27CB99BEAFDB}</Project>
       <Name>Common.Core.Threading.Dev</Name>
-      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Core.Utils\Src\Main\Common.Core.Utils.Dev.csproj">
       <Project>{0744A732-A7FE-4658-967D-C5A583EF08E4}</Project>
