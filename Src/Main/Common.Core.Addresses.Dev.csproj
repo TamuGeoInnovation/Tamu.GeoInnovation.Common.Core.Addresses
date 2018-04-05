@@ -104,10 +104,6 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\Tamu.GeoInnovation.Common.Core.Utils.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Addresses\AbstractClasses\AbstractStreetAddress.cs" />
@@ -122,6 +118,8 @@
     <Compile Include="Addresses\ValidateableStreetAddress.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utils\Ordinals\OrdinalUtils.cs" />
+    <Compile Include="Utils\Ordinals\OrdinalWhereClause.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -169,6 +167,10 @@
     <ProjectReference Include="..\..\..\Common.Core.Threading\Src\Main\Common.Core.Threading.Dev.csproj">
       <Project>{FE6237ED-DCBB-43F5-A216-27CB99BEAFDB}</Project>
       <Name>Common.Core.Threading.Dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Utils\Src\Main\Common.Core.Utils.Dev.csproj">
+      <Project>{0744a732-a7fe-4658-967d-c5a583ef08e4}</Project>
+      <Name>Common.Core.Utils.Dev</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
