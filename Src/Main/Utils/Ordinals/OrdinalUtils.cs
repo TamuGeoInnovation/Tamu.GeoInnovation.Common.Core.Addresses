@@ -7,7 +7,7 @@ using USC.GISResearchLab.Common.Utils.Numbers;
 
 namespace Tamu.GeoInnovation.Common.Core.Addresses.Utils.Ordinals
 {
-    class OrdinalUtils
+    public class OrdinalUtils
     {
 
         //Payton: If streetname is numeric this adds where clause to account for multiple variations of the name
