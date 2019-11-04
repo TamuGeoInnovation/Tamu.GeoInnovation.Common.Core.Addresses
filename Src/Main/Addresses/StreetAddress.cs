@@ -7,7 +7,7 @@ namespace USC.GISResearchLab.Common.Addresses
 {
 
     public enum AddressFormatType { USPSPublication28, USCensusTiger, LACounty }
-    
+
     public class StreetAddress : AbstractStreetAddress
     {
 
@@ -19,7 +19,7 @@ namespace USC.GISResearchLab.Common.Addresses
 
         #region Properties
 
-        
+
         #endregion
 
         #region Constructors
@@ -44,11 +44,11 @@ namespace USC.GISResearchLab.Common.Addresses
         { }
 
         public StreetAddress(string number, string preDirectional, string name, string suffix, string postDirectional, string suite, string suiteNumber, string city, string state, string zip, string country)
-            : this(number, preDirectional,null, null, name, suffix, null, postDirectional, suite, suiteNumber, city, state, zip, null)
+            : this(number, preDirectional, null, null, name, suffix, null, postDirectional, suite, suiteNumber, city, state, zip, null)
         { }
 
         public StreetAddress(string number, string preDirectional, string preQualifier, string preType, string name, string suffix, string postQualifier, string postDirectional, string suite, string suiteNumber, string city, string state, string zip, string country)
-            : this(number, null, preDirectional,preQualifier, preType, null, name, suffix, null, postQualifier, postDirectional, suite, suiteNumber, city, state, zip, null)
+            : this(number, null, preDirectional, preQualifier, preType, null, name, suffix, null, postQualifier, postDirectional, suite, suiteNumber, city, state, zip, null)
         {
         }
 
@@ -127,7 +127,7 @@ namespace USC.GISResearchLab.Common.Addresses
             ret += StringUtils.ValueAndBlankOrNoBlank(PostDirectional);
             ret += StringUtils.ValueAndBlankOrNoBlank(SuiteType);
             ret += StringUtils.ValueAndBlankOrNoBlank(SuiteNumber);
-            
+
             return ret;
         }
 

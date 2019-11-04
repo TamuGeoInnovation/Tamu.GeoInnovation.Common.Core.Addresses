@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using USC.GISResearchLab.Common.Core.Addresses.Interfaces;
 using USC.GISResearchLab.Common.Utils.Strings;
-using System.Text;
 
 namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
 {
@@ -213,7 +213,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             sb.Append(StringUtils.ValueAndBlankOrNoBlank(Suffix));
             sb.Append(StringUtils.ValueAndBlankOrNoBlank(PostQualifier));
             sb.Append(StringUtils.ValueAndBlankOrNoBlank(PostDirectional));
-            
+
             if (!String.IsNullOrEmpty(SuiteNumber) || !String.IsNullOrEmpty(SuiteType))
             {
                 sb.Append(", ");
@@ -339,7 +339,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         {
             return base.GetHashCode();
         }
-        
+
 
         public override List<AddressComponents> Difference(StreetAddress b)
         {

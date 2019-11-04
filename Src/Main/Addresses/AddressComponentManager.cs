@@ -31,20 +31,22 @@ namespace USC.GISResearchLab.Common.Addresses
         All = 262144,
     }
 
-    public enum PlaceTypes { 
-        unknown, 
-        zip, 
-        place, 
-        consolidatedCity, 
-        subMcd, 
-        countySub, 
+    public enum PlaceTypes
+    {
+        unknown,
+        zip,
+        place,
+        consolidatedCity,
+        subMcd,
+        countySub,
         county,
-        country, 
+        country,
     };
 
-    public enum StreetNumberRangeOrderType { 
-        Unknown, 
-        HiLow, 
+    public enum StreetNumberRangeOrderType
+    {
+        Unknown,
+        HiLow,
         LowHi,
         SingleNumber,
     };
@@ -118,43 +120,43 @@ namespace USC.GISResearchLab.Common.Addresses
                 {
                     ret = AddressComponents.PreDirectional;
                 }
-                else if (String.Compare(name, "prequalifier", true) == 0|| String.Compare(name, AddressComponents.PreQualifier.ToString(), true) == 0)
+                else if (String.Compare(name, "prequalifier", true) == 0 || String.Compare(name, AddressComponents.PreQualifier.ToString(), true) == 0)
                 {
                     ret = AddressComponents.PreQualifier;
                 }
-                else if (String.Compare(name, "name", true) == 0|| String.Compare(name, AddressComponents.StreetName.ToString(), true) == 0)
+                else if (String.Compare(name, "name", true) == 0 || String.Compare(name, AddressComponents.StreetName.ToString(), true) == 0)
                 {
                     ret = AddressComponents.StreetName;
                 }
-                else if (String.Compare(name, "suffix", true) == 0|| String.Compare(name, AddressComponents.Suffix.ToString(), true) == 0)
+                else if (String.Compare(name, "suffix", true) == 0 || String.Compare(name, AddressComponents.Suffix.ToString(), true) == 0)
                 {
                     ret = AddressComponents.Suffix;
                 }
-                else if (String.Compare(name, "post", true) == 0|| String.Compare(name, AddressComponents.PostDirectional.ToString(), true) == 0)
+                else if (String.Compare(name, "post", true) == 0 || String.Compare(name, AddressComponents.PostDirectional.ToString(), true) == 0)
                 {
                     ret = AddressComponents.PostDirectional;
                 }
-                else if (String.Compare(name, "postqualifier", true) == 0|| String.Compare(name, AddressComponents.PostQualifier.ToString(), true) == 0)
+                else if (String.Compare(name, "postqualifier", true) == 0 || String.Compare(name, AddressComponents.PostQualifier.ToString(), true) == 0)
                 {
                     ret = AddressComponents.PostQualifier;
                 }
-                else if (String.Compare(name, "suitetype", true) == 0|| String.Compare(name, AddressComponents.SuiteType.ToString(), true) == 0)
+                else if (String.Compare(name, "suitetype", true) == 0 || String.Compare(name, AddressComponents.SuiteType.ToString(), true) == 0)
                 {
                     ret = AddressComponents.SuiteType;
                 }
-                else if (String.Compare(name, "suitenumber", true) == 0|| String.Compare(name, AddressComponents.SuiteNumber.ToString(), true) == 0)
+                else if (String.Compare(name, "suitenumber", true) == 0 || String.Compare(name, AddressComponents.SuiteNumber.ToString(), true) == 0)
                 {
                     ret = AddressComponents.SuiteNumber;
                 }
-                else if (String.Compare(name, "city", true) == 0|| String.Compare(name, AddressComponents.City.ToString(), true) == 0)
+                else if (String.Compare(name, "city", true) == 0 || String.Compare(name, AddressComponents.City.ToString(), true) == 0)
                 {
                     ret = AddressComponents.City;
                 }
-                else if (String.Compare(name, "state", true) == 0|| String.Compare(name, AddressComponents.State.ToString(), true) == 0)
+                else if (String.Compare(name, "state", true) == 0 || String.Compare(name, AddressComponents.State.ToString(), true) == 0)
                 {
                     ret = AddressComponents.State;
                 }
-                else if (String.Compare(name, "zip", true) == 0|| String.Compare(name, AddressComponents.Zip.ToString(), true) == 0)
+                else if (String.Compare(name, "zip", true) == 0 || String.Compare(name, AddressComponents.Zip.ToString(), true) == 0)
                 {
                     ret = AddressComponents.Zip;
                 }

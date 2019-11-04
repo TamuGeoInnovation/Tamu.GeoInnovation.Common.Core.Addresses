@@ -30,11 +30,11 @@ namespace USC.GISResearchLab.Common.Addresses
             ret.NumberFractional = streetAddress.NumberFractional;
             ret.PreDirectional = streetAddress.PreDirectional;
             ret.PreType = streetAddress.PreType;
-            ret.PreQualifier= streetAddress.PreQualifier;
+            ret.PreQualifier = streetAddress.PreQualifier;
             ret.StreetName = streetAddress.StreetName;
             ret.Suffix = streetAddress.Suffix;
             ret.PostDirectional = streetAddress.PostDirectional;
-            ret.PostQualifier= streetAddress.PostQualifier;
+            ret.PostQualifier = streetAddress.PostQualifier;
             ret.SuiteType = streetAddress.SuiteType;
             ret.SuiteNumber = streetAddress.SuiteNumber;
             ret.PostOfficeBoxNumber = streetAddress.PostOfficeBoxNumber;
@@ -58,7 +58,7 @@ namespace USC.GISResearchLab.Common.Addresses
             {
                 ret.FullName = streetAddress.FullName;
             }
-            else if (!String.IsNullOrEmpty( streetAddress.NonParsedStreetAddress))
+            else if (!String.IsNullOrEmpty(streetAddress.NonParsedStreetAddress))
             {
                 ret.FullName = streetAddress.NonParsedStreetAddress;
             }
@@ -100,7 +100,7 @@ namespace USC.GISResearchLab.Common.Addresses
             ret += StringUtils.ValueAndBlankOrNoBlank(PreDirectional);
             ret += StringUtils.ValueAndBlankOrNoBlank(StreetName);
             ret += StringUtils.ValueAndBlankOrNoBlank(Suffix);
-            ret += StringUtils.ValueAndBlankOrNoBlank(PostDirectional);            
+            ret += StringUtils.ValueAndBlankOrNoBlank(PostDirectional);
             ret += StringUtils.ValueAndBlankOrNoBlank(City);
             ret += StringUtils.ValueAndBlankOrNoBlank(State);
             ret += StringUtils.ValueOrNoBlank(ZIP);
@@ -108,6 +108,6 @@ namespace USC.GISResearchLab.Common.Addresses
         }
 
 
-        
+
     }
 }

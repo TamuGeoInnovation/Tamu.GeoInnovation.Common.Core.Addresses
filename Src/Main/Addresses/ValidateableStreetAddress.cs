@@ -90,7 +90,7 @@ namespace USC.GISResearchLab.Common.Addresses
 
         public int EvenOdd
         {
-            get { return NumberInt%2; }
+            get { return NumberInt % 2; }
         }
 
         public bool IsLeft
@@ -138,12 +138,12 @@ namespace USC.GISResearchLab.Common.Addresses
 
         public ValidateableStreetAddress(string number, string pre, string name, string suffix, string post, string suite,
                        string suiteNumber, string city, string state, string zip)
-        { 
+        {
             Number = number;
             PreDirectional = pre;
             StreetName = name;
             Suffix = suffix;
-            PostDirectional= post;
+            PostDirectional = post;
             SuiteType = suite;
             SuiteNumber = suiteNumber;
             City = city;

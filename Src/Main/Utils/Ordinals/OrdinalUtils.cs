@@ -97,5 +97,5 @@ namespace Tamu.GeoInnovation.Common.Core.Addresses.Utils.Ordinals
         }
     }
 
-    
+
 }

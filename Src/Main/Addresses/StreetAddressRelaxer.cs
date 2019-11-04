@@ -123,8 +123,8 @@ namespace USC.GISResearchLab.Common.Addresses
                 // pre, post
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level1Bag.Contains(AddressComponents.PostDirectional))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
                         AddressComponents.PostDirectional }));
                 }
 
@@ -133,15 +133,15 @@ namespace USC.GISResearchLab.Common.Addresses
                 // post, suffix
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level2Bag.Contains(AddressComponents.Suffix))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
                         AddressComponents.Suffix }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PostDirectional) && level2Bag.Contains(AddressComponents.Suffix))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PostDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PostDirectional,
                         AddressComponents.Suffix }));
                 }
 
@@ -150,13 +150,13 @@ namespace USC.GISResearchLab.Common.Addresses
                 // pre, post, suffix
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level1Bag.Contains(AddressComponents.PostDirectional) && level2Bag.Contains(AddressComponents.Suffix))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
-                        AddressComponents.PostDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
+                        AddressComponents.PostDirectional,
                         AddressComponents.Suffix }));
                 }
 
-                
+
                 // step 5 (level 1's in conjunction with level 3)
                 // pre, city
                 // post, city
@@ -164,29 +164,29 @@ namespace USC.GISResearchLab.Common.Addresses
                 // post, zip
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level3Bag.Contains(AddressComponents.City))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
                         AddressComponents.City }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PostDirectional) && level3Bag.Contains(AddressComponents.City))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PostDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PostDirectional,
                         AddressComponents.City }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level3Bag.Contains(AddressComponents.Zip))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
                         AddressComponents.Zip }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PostDirectional) && level3Bag.Contains(AddressComponents.Zip))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PostDirectional, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PostDirectional,
                         AddressComponents.Zip }));
                 }
 
@@ -195,15 +195,15 @@ namespace USC.GISResearchLab.Common.Addresses
                 // suffix, zip
                 if (level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.City))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.Suffix,
                         AddressComponents.City }));
                 }
 
                 if (level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.Zip))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.Suffix,
                         AddressComponents.Zip }));
                 }
 
@@ -213,35 +213,35 @@ namespace USC.GISResearchLab.Common.Addresses
                 // post, suffix, city
                 // pre, suffix, zip
                 // post, suffix, zip
-                if (level1Bag.Contains(AddressComponents.PreDirectional) && level2Bag.Contains(AddressComponents.Suffix) &&  level3Bag.Contains(AddressComponents.City))
+                if (level1Bag.Contains(AddressComponents.PreDirectional) && level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.City))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
+                        AddressComponents.Suffix,
                         AddressComponents.City }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PostDirectional) && level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.City))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PostDirectional, 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PostDirectional,
+                        AddressComponents.Suffix,
                         AddressComponents.City }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.Zip))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
+                        AddressComponents.Suffix,
                         AddressComponents.Zip }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PostDirectional) && level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.Zip))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PostDirectional, 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PostDirectional,
+                        AddressComponents.Suffix,
                         AddressComponents.Zip }));
                 }
 
@@ -250,19 +250,19 @@ namespace USC.GISResearchLab.Common.Addresses
                 // pre, post, suffix, zip
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level1Bag.Contains(AddressComponents.PostDirectional) && level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.City))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
-                        AddressComponents.PostDirectional, 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
+                        AddressComponents.PostDirectional,
+                        AddressComponents.Suffix,
                         AddressComponents.City }));
                 }
 
                 if (level1Bag.Contains(AddressComponents.PreDirectional) && level1Bag.Contains(AddressComponents.PostDirectional) && level2Bag.Contains(AddressComponents.Suffix) && level3Bag.Contains(AddressComponents.Zip))
                 {
-                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] { 
-                        AddressComponents.PreDirectional, 
-                        AddressComponents.PostDirectional, 
-                        AddressComponents.Suffix, 
+                    ret.Add(GetNextRelaxedAddress(address, new AddressComponents[] {
+                        AddressComponents.PreDirectional,
+                        AddressComponents.PostDirectional,
+                        AddressComponents.Suffix,
                         AddressComponents.Zip }));
                 }
 

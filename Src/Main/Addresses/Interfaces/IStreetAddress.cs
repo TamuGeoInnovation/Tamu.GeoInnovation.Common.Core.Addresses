@@ -37,14 +37,14 @@ namespace USC.GISResearchLab.Common.Core.Addresses.Interfaces
         bool HasHighwayContractRouteBoxNumber { get; }
         bool HasHighwayContractRouteBox { get; set; }
 
-       
+
 
         string AddressId { get; set; }
-       
+
 
         string Number { get; set; }
         string NumberFractional { get; set; }
-       
+
         //string NonParsedOriginalValue { get; set; }
         string NonParsedStreetAddress { get; set; }
         StreetAddress NonParsedOriginalStreetAddress { get; set; }

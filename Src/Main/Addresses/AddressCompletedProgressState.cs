@@ -16,7 +16,7 @@ namespace USC.GISResearchLab.Geocoding.Core.Runners.Databases
             get { return _Id; }
             set { _Id = value; }
         }
-	
+
 
         public string ZIP
         {
@@ -35,19 +35,19 @@ namespace USC.GISResearchLab.Geocoding.Core.Runners.Databases
             get { return _City; }
             set { _City = value; }
         }
-	
+
 
         public string Street
         {
             get { return _Street; }
             set { _Street = value; }
         }
-	
 
-        
+
+
         #endregion
 
         public AddressCompletedProgressState()
-            :base(){}
+            : base() { }
     }
 }
