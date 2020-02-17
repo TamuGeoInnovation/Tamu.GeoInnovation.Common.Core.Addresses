@@ -390,5 +390,33 @@ namespace USC.GISResearchLab.Common.Addresses
 
             return ret;
         }
+
+        public string ToCSV(string separator)
+        {
+            string ret = "";
+            ret += Number + separator;
+            ret += NumberFractional + separator;
+            ret += PreDirectional + separator;
+            ret += PreQualifier + separator;
+            ret += StreetName + separator;
+            ret += PostQualifier + separator;
+            ret += Suffix + separator;
+            ret += PostDirectional + separator;
+            ret += SuiteType + separator;
+            ret += SuiteNumber + separator;
+            ret += PostOfficeBoxType + separator;
+            ret += PostOfficeBoxNumber + separator;
+            ret += City + separator;
+            ret += ConsolidatedCity + separator;
+            ret += MinorCivilDivision + separator;
+            ret += CountySubregion + separator;
+            ret += County + separator;
+            ret += State + separator;
+            ret += ZIP + separator;
+            ret += ZIPPlus4 + separator;
+
+
+            return ret;
+        }
     }
 }
