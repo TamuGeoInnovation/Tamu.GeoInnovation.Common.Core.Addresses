@@ -41,38 +41,12 @@ namespace USC.GISResearchLab.Common.Addresses
             }
         }
 
-        public int FIPS
-        {
-            get { return _FIPS; }
-            set { _FIPS = value; }
-        }
+        public int FIPS { get; set; }
 
-        public bool HasRequiredStreetParameters
-        {
-            get { return _HasRequiredStreetParameters; }
-            set { _HasRequiredStreetParameters = value; }
-        }
+        public bool HasRequiredStreetParameters { get; set; }
 
-        public bool HasValidNumber
-        {
-            get { return StringUtils.StringIsInt(Number); }
-        }
-
-        public bool HasName
-        {
-            get { return !StringUtils.IsEmpty(StreetName); }
-        }
-
-        public bool HasCity
-        {
-            get { return !StringUtils.IsEmpty(City); }
-        }
-
-        public bool HasState
-        {
-            get { return !StringUtils.IsEmpty(State); }
-        }
-
+        public bool HasValidNumber { get; set; }
+        public bool HasName { get; set; }
         public bool HasCityState
         {
             get { return (HasCity && HasState); }
@@ -93,17 +67,9 @@ namespace USC.GISResearchLab.Common.Addresses
             get { return NumberInt % 2; }
         }
 
-        public bool IsLeft
-        {
-            get { return _IsLeft; }
-            set { _IsLeft = value; }
-        }
+        public bool IsLeft { get; set; }
 
-        public bool IsRight
-        {
-            get { return _IsRight; }
-            set { _IsRight = value; }
-        }
+        public bool IsRight { get; set; }
 
         #endregion
 
