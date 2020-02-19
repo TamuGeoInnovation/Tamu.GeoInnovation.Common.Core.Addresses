@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using USC.GISResearchLab.Common.Core.Addresses.Interfaces;
@@ -36,44 +38,95 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
 
         #region Properties
 
-        public double Version { get; set; }
-        public bool Valid { get; set; }
-        public string Error { get; set; }
-        public bool ExceptionOccurred { get; set; }
-        public Exception Exception { get; set; }
-
+        [JsonConverter(typeof(StringEnumConverter))]
         public AddressFormatType AddressFormatType { get; set; }
 
+        [JsonIgnore]
+        public double Version { get; set; }
+        [JsonIgnore]
+        public bool Valid { get; set; }
+        [JsonIgnore]
+        public string Error { get; set; }
+        [JsonIgnore]
+        public bool ExceptionOccurred { get; set; }
+        [JsonIgnore]
+        public Exception Exception { get; set; }
+
+
+
+        [JsonIgnore]
         public StreetSide StreetSide { get; set; }
+        [JsonIgnore]
         public StreetNumberRangeParity StreetNumberRangeParity { get; set; }
 
+        [JsonIgnore]
         public string TransactionId { get; set; }
+        [JsonIgnore]
         public TimeSpan TimeTaken { get; set; }
-
+        [JsonIgnore]
         public int NumTracts2000 { get; set; }
+        [JsonIgnore]
         public int NumTracts2010 { get; set; }
 
+
+
+        [JsonIgnore]
+        public string Id { get; set; }
+        [JsonIgnore]
+        public string Name { get; set; }
+
+        [JsonIgnore]
+        public string Phone { get; set; }
+
+        [JsonIgnore]
+        public string FullName { get; set; }
+
+        public string Number { get; set; }
+        public string NumberFractional { get; set; }
+        public string PreDirectional { get; set; }
+        public string PreQualifier { get; set; }
+        public string PreType { get; set; }
+        public string PreArticle { get; set; }
+        public string StreetName { get; set; }
+        public string PostArticle { get; set; }
+        public string PostQualifier { get; set; }
+        public string PostDirectional { get; set; }
+        public string Suffix { get; set; }
+        public string SuiteType { get; set; }
+        public string SuiteNumber { get; set; }
+
+        [JsonIgnore]
         public string CityAlternate { get; set; }
+
         public string City { get; set; }
+        [JsonIgnore]
         public string CityCode { get; set; }
         public string MinorCivilDivision { get; set; }
+        [JsonIgnore]
         public string MinorCivilDivisionCode { get; set; }
         public string ConsolidatedCity { get; set; }
+        [JsonIgnore]
         public string ConsolidatedCityCode { get; set; }
         public string CountySubregion { get; set; }
+        [JsonIgnore]
         public string CountySubregionCode { get; set; }
         public string County { get; set; }
-        public string CountyCode { get; set; }
-        public string Country { get; set; }
-        public string CountryCode { get; set; }
+
         public string State { get; set; }
+        [JsonIgnore]
         public string StateCode { get; set; }
 
-        public string MetropolitanDivisionCode { get; set; }
-        public string MajorStatisticalAreaCode { get; set; }
-        public string CentralBusinessStatisticalAreaCode { get; set; }
-        public string CentralBusinessStatisticalMicroAreaCode { get; set; }
 
+
+        [JsonIgnore]
+        public string MetropolitanDivisionCode { get; set; }
+        [JsonIgnore]
+        public string MajorStatisticalAreaCode { get; set; }
+        [JsonIgnore]
+        public string CentralBusinessStatisticalAreaCode { get; set; }
+        [JsonIgnore]
+        public string CentralBusinessStatisticalMicroAreaCode { get; set; }
+        [JsonIgnore]
         public string OtherInformation { get; set; }
 
         public string ZIP { get; set; }
@@ -83,62 +136,83 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         public string ZIPPlus4 { get; set; }
         public string ZIPPlus5 { get; set; }
 
-        public ZIPCodeType ZIPCodeType { get; set; }
+        [JsonIgnore]
+        public string CountyCode { get; set; }
+        public string Country { get; set; }
+        [JsonIgnore]
+        public string CountryCode { get; set; }
 
+        [JsonIgnore]
+        public ZIPCodeType ZIPCodeType { get; set; }
+        [JsonIgnore]
         public string ZIPAlternate { get; set; }
+        [JsonIgnore]
         public string ZIPPlus1Alternate { get; set; }
+        [JsonIgnore]
         public string ZIPPlus2Alternate { get; set; }
+        [JsonIgnore]
         public string ZIPPlus3Alternate { get; set; }
+        [JsonIgnore]
         public string ZIPPlus4Alternate { get; set; }
+        [JsonIgnore]
         public string ZIPPlus5Alternate { get; set; }
 
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Phone { get; set; }
 
-        public string FullName { get; set; }
-        public string PreDirectional { get; set; }
-        public string PreType { get; set; }
-        public string StreetName { get; set; }
-        public string PreArticle { get; set; }
-        public string PostArticle { get; set; }
-        public string PreQualifier { get; set; }
-        public string PostQualifier { get; set; }
-        public string PostDirectional { get; set; }
-        public string Suffix { get; set; }
-        public string SuiteType { get; set; }
-        public string SuiteNumber { get; set; }
-
-
+        [JsonIgnore]
         public string AliasFullName { get; set; }
+        [JsonIgnore]
         public string AliasPreDirectional { get; set; }
+        [JsonIgnore]
         public string AliasPreType { get; set; }
+        [JsonIgnore]
         public string AliasName { get; set; }
+        [JsonIgnore]
         public string AliasPreArticle { get; set; }
+        [JsonIgnore]
         public string AliasPostArticle { get; set; }
+        [JsonIgnore]
         public string AliasPreQualifier { get; set; }
+        [JsonIgnore]
         public string AliasPostQualifier { get; set; }
+        [JsonIgnore]
         public string AliasPostDirectional { get; set; }
+        [JsonIgnore]
         public string AliasSuffix { get; set; }
+        [JsonIgnore]
         public string AliasSuiteType { get; set; }
+        [JsonIgnore]
         public string AliasSuiteNumber { get; set; }
-
-        public string CensusYear { get; set; }
-        public string CensusTract { get; set; }
-        public string CensusBlock { get; set; }
-        public string CensusBlockGroup { get; set; }
-        public string CensusNAACCRCertCode { get; set; }
-        public string CensusNAACCRCertType { get; set; }
-        public string CensusCountyFips { get; set; }
-        public string CensusPlaceFips { get; set; }
-        public string CensusMSAFips { get; set; }
-        public string CensusMCDFips { get; set; }
-        public string CensusCBSAFips { get; set; }
-        public string CensusCBSAMicro { get; set; }
-        public string CensusMetDivFips { get; set; }
-        public string CensusStateFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusYear { get; set; }
+        //[JsonIgnore]
+        //public string CensusTract { get; set; }
+        //[JsonIgnore]
+        //public string CensusBlock { get; set; }
+        //[JsonIgnore]
+        //public string CensusBlockGroup { get; set; }
+        //[JsonIgnore]
+        //public string CensusNAACCRCertCode { get; set; }
+        //[JsonIgnore]
+        //public string CensusNAACCRCertType { get; set; }
+        //[JsonIgnore]
+        //public string CensusCountyFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusPlaceFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusMSAFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusMCDFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusCBSAFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusCBSAMicro { get; set; }
+        //[JsonIgnore]
+        //public string CensusMetDivFips { get; set; }
+        //[JsonIgnore]
+        //public string CensusStateFips { get; set; }
 
         private bool _NameIsNumberComputed;
+        [JsonIgnore]
         public bool NameIsNumberComputed
         {
             get
@@ -152,6 +226,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         }
 
         private bool _NameIsNumber;
+        [JsonIgnore]
         public bool NameIsNumber
         {
             get
@@ -171,6 +246,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         }
 
         private bool _NameIsNumericAbbreviationComputed;
+        [JsonIgnore]
         public bool NameIsNumericAbbreviationComputed
         {
             get
@@ -184,6 +260,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         }
 
         private bool _NameIsNumericAbbreviation;
+        [JsonIgnore]
         public bool NameIsNumericAbbreviation
         {
             get
@@ -202,10 +279,11 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
-
+        [JsonIgnore]
         public bool NameIsNumberWordsComputed { get; set; }
 
         private bool _NameIsNumberWords;
+        [JsonIgnore]
         public bool NameIsNumberWords
         {
             get
@@ -223,9 +301,10 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
-
+        [JsonIgnore]
         public string Source { get; set; }
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public AddressLocationTypes AddressLocationType
         {
             get
@@ -253,6 +332,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
 
         }
 
+        [JsonIgnore]
         public bool HasCity
         {
             get
@@ -261,6 +341,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
+        [JsonIgnore]
         public bool HasZip
         {
             get
@@ -269,6 +350,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
+        [JsonIgnore]
         public bool HasZipPlus4
         {
             get
@@ -277,6 +359,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
+        [JsonIgnore]
         public bool HasState
         {
             get
@@ -285,6 +368,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
+        [JsonIgnore]
         public bool HasAddress
         {
             get
@@ -322,53 +406,53 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
 
         public AbstractStreetAddressBase(string pre, string name, string suffix, string post, string suite, string suiteNumber, string city, string state, string zip, string country)
         {
-            PreDirectional = "";
-            PreQualifier = "";
-            PreArticle = "";
-            StreetName = "";
-            PostDirectional = "";
-            PostQualifier = "";
-            PostArticle = "";
-            Suffix = "";
-            SuiteType = "";
-            SuiteNumber = "";
-            City = "";
-            State = "";
-            ZIP = "";
-            ZIPPlus1 = "";
-            ZIPPlus2 = "";
-            ZIPPlus3 = "";
-            ZIPPlus4 = "";
-            ZIPPlus5 = "";
-            MinorCivilDivision = "";
-            CountySubregion = "";
-            County = "";
-            Country = "";
-            Source = "";
+            //PreDirectional = "";
+            //PreQualifier = "";
+            //PreArticle = "";
+            //StreetName = "";
+            //PostDirectional = "";
+            //PostQualifier = "";
+            //PostArticle = "";
+            //Suffix = "";
+            //SuiteType = "";
+            //SuiteNumber = "";
+            //City = "";
+            //State = "";
+            //ZIP = "";
+            //ZIPPlus1 = "";
+            //ZIPPlus2 = "";
+            //ZIPPlus3 = "";
+            //ZIPPlus4 = "";
+            //ZIPPlus5 = "";
+            //MinorCivilDivision = "";
+            //CountySubregion = "";
+            //County = "";
+            //Country = "";
+            //Source = "";
 
-            PreDirectional = (!String.IsNullOrEmpty(pre)) ? pre.Trim() : "";
-            StreetName = (!String.IsNullOrEmpty(name)) ? name.Trim() : "";
-            Suffix = (!String.IsNullOrEmpty(suffix)) ? suffix.Trim() : "";
-            PostDirectional = (!String.IsNullOrEmpty(post)) ? post.Trim() : "";
-            SuiteType = (!String.IsNullOrEmpty(suite)) ? suite.Trim() : "";
-            SuiteNumber = (!String.IsNullOrEmpty(suiteNumber)) ? suiteNumber.Trim() : "";
-            City = (!String.IsNullOrEmpty(city)) ? city.Trim() : "";
-            State = (!String.IsNullOrEmpty(state)) ? state.Trim() : "";
-            ZIP = (!String.IsNullOrEmpty(zip)) ? zip.Trim() : "";
-            Country = (!String.IsNullOrEmpty(country)) ? country.Trim() : "";
+            PreDirectional = (!String.IsNullOrEmpty(pre)) ? pre.Trim() : null;
+            StreetName = (!String.IsNullOrEmpty(name)) ? name.Trim() : null;
+            Suffix = (!String.IsNullOrEmpty(suffix)) ? suffix.Trim() : null;
+            PostDirectional = (!String.IsNullOrEmpty(post)) ? post.Trim() : null;
+            SuiteType = (!String.IsNullOrEmpty(suite)) ? suite.Trim() : null;
+            SuiteNumber = (!String.IsNullOrEmpty(suiteNumber)) ? suiteNumber.Trim() : null;
+            City = (!String.IsNullOrEmpty(city)) ? city.Trim() : null;
+            State = (!String.IsNullOrEmpty(state)) ? state.Trim() : null;
+            ZIP = (!String.IsNullOrEmpty(zip)) ? zip.Trim() : null;
+            Country = (!String.IsNullOrEmpty(country)) ? country.Trim() : null;
 
-            AliasFullName = "";
-            AliasPreDirectional = "";
-            AliasPreType = "";
-            AliasName = "";
-            AliasPreArticle = "";
-            AliasPostArticle = "";
-            AliasPreQualifier = "";
-            AliasPostQualifier = "";
-            AliasPostDirectional = "";
-            AliasSuffix = "";
-            AliasSuiteType = "";
-            AliasSuiteNumber = "";
+            //AliasFullName = "";
+            //AliasPreDirectional = "";
+            //AliasPreType = "";
+            //AliasName = "";
+            //AliasPreArticle = "";
+            //AliasPostArticle = "";
+            //AliasPreQualifier = "";
+            //AliasPostQualifier = "";
+            //AliasPostDirectional = "";
+            //AliasSuffix = "";
+            //AliasSuiteType = "";
+            //AliasSuiteNumber = "";
         }
 
         #endregion
@@ -695,9 +779,6 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         {
             StreetAddress ret = new StreetAddress();
             ret.AddressId = ((StreetAddress)this).AddressId;
-            ret.CensusBlock = ((StreetAddress)this).CensusBlock;
-            ret.CensusBlockGroup = ((StreetAddress)this).CensusBlockGroup;
-            ret.CensusTract = ((StreetAddress)this).CensusTract;
             ret.City = ((StreetAddress)this).City;
             ret.CityAlternate = ((StreetAddress)this).CityAlternate;
             ret.CityCode = ((StreetAddress)this).CityCode;

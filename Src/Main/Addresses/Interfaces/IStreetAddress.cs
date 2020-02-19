@@ -49,15 +49,7 @@ namespace USC.GISResearchLab.Common.Core.Addresses.Interfaces
         string NonParsedStreetAddress { get; set; }
         StreetAddress NonParsedOriginalStreetAddress { get; set; }
 
-        bool HasCity { get; }
-        bool HasZip { get; }
-        bool HasZipPlus4 { get; }
-        bool HasState { get; }
-        bool HasAddress { get; }
 
-        string CensusTract { get; set; }
-        string CensusBlock { get; set; }
-        string CensusBlockGroup { get; set; }
 
         #endregion
     }

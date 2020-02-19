@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,81 +15,108 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
 
         #region Properties
 
+        [JsonIgnore]
         public List<AddressComponents> SoundexableAttributes { get; set; }
+        [JsonIgnore]
         public bool IsParsed { get; set; }
+        [JsonIgnore]
         public bool HasPostOfficeBox { get; set; }
+        [JsonIgnore]
         public string PostOfficeBoxType { get; set; }
+        [JsonIgnore]
         public string PostOfficeBoxNumber { get; set; }
+        [JsonIgnore]
         public bool HasPostOfficeBoxNumber
         {
             get { return !String.IsNullOrEmpty(PostOfficeBoxNumber); }
         }
 
+        [JsonIgnore]
         public bool HasRuralRoute { get; set; }
+        [JsonIgnore]
         public string RuralRouteType { get; set; }
+        [JsonIgnore]
         public string RuralRouteNumber { get; set; }
-
+        [JsonIgnore]
         public bool HasRuralRouteNumber
         {
             get { return !String.IsNullOrEmpty(RuralRouteNumber); }
         }
-
+        [JsonIgnore]
         public string RuralRouteBoxType { get; set; }
+        [JsonIgnore]
         public string RuralRouteBoxNumber { get; set; }
-
+        [JsonIgnore]
         public bool HasRuralRouteBoxNumber
         {
             get { return !String.IsNullOrEmpty(RuralRouteBoxNumber); }
         }
 
+        [JsonIgnore]
         public bool HasRuralRouteBox { get; set; }
+        [JsonIgnore]
         public bool HasStarRoute { get; set; }
+        [JsonIgnore]
         public string StarRouteType { get; set; }
+        [JsonIgnore]
         public string StarRouteNumber { get; set; }
+        [JsonIgnore]
         public bool HasStarRouteNumber
         {
             get { return !String.IsNullOrEmpty(StarRouteNumber); }
         }
 
+        [JsonIgnore]
         public string StarRouteBoxType { get; set; }
+        [JsonIgnore]
         public string StarRouteBoxNumber { get; set; }
+        [JsonIgnore]
         public bool HasStarRouteBoxNumber
         {
             get { return !String.IsNullOrEmpty(StarRouteBoxNumber); }
         }
 
+        [JsonIgnore]
         public bool HasStarRouteBox { get; set; }
+        [JsonIgnore]
         public bool HasHighwayContractRoute { get; set; }
+        [JsonIgnore]
         public string HighwayContractRouteType { get; set; }
+        [JsonIgnore]
         public string HighwayContractRouteNumber { get; set; }
-
+        [JsonIgnore]
         public bool HasHighwayContractRouteNumber
         {
             get { return !String.IsNullOrEmpty(HighwayContractRouteNumber); }
         }
 
+        [JsonIgnore]
         public string HighwayContractRouteBoxType { get; set; }
+        [JsonIgnore]
         public string HighwayContractRouteBoxNumber { get; set; }
+        [JsonIgnore]
         public bool HasHighwayContractRouteBoxNumber
         {
             get { return !String.IsNullOrEmpty(HighwayContractRouteBoxNumber); }
         }
 
+        [JsonIgnore]
         public bool HasHighwayContractRouteBox { get; set; }
 
-
+        [JsonIgnore]
         public string AddressId { get; set; }
 
 
-
-        public string Number { get; set; }
+        [JsonIgnore]
         public string NumberWithMultiRanges { get; set; }
-        public string NumberFractional { get; set; }
 
-        //public string NonParsedOriginalValue { get; set; }
+
+
+        [JsonIgnore]
         public string NonParsedStreetAddress { get; set; }
 
         private StreetAddress _NonParsedOriginalStreetAddress;
+        [JsonIgnore]
         public StreetAddress NonParsedOriginalStreetAddress
         {
             get
@@ -105,6 +134,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             }
         }
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public new AddressLocationTypes AddressLocationType
         {
             get
@@ -179,19 +209,19 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
             : base(pre, name, post, suffix, suite, suiteNumber, city, state, zip, country)
         {
             //NonParsedOriginalValue = "";
-            AddressId = "";
-            Number = "";
-            NumberFractional = "";
+            //AddressId = "";
+            //Number = "";
+            //NumberFractional = "";
 
-            PostOfficeBoxType = "";
-            PostOfficeBoxNumber = "";
-            RuralRouteType = "";
-            RuralRouteNumber = "";
-            RuralRouteBoxType = "";
-            RuralRouteBoxNumber = "";
+            //PostOfficeBoxType = "";
+            //PostOfficeBoxNumber = "";
+            //RuralRouteType = "";
+            //RuralRouteNumber = "";
+            //RuralRouteBoxType = "";
+            //RuralRouteBoxNumber = "";
             SoundexableAttributes = new List<AddressComponents>();
 
-            Number = (!String.IsNullOrEmpty(number)) ? number.Trim() : "";
+            Number = (!String.IsNullOrEmpty(number)) ? number.Trim() : null;
             IsParsed = true;
         }
 

@@ -95,10 +95,6 @@ namespace USC.GISResearchLab.Common.Core.Addresses.Interfaces
         bool HasState { get; }
         bool HasAddress { get; }
 
-        string CensusTract { get; set; }
-        string CensusBlock { get; set; }
-        string CensusBlockGroup { get; set; }
-
         StreetNumberRangeParity StreetNumberRangeParity { get; set; }
         StreetSide StreetSide { get; set; }
 
