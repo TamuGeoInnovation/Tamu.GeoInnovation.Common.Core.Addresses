@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using USC.GISResearchLab.Common.Core.Addresses.Interfaces;
 using USC.GISResearchLab.Common.Utils.Numbers;
 using USC.GISResearchLab.Common.Utils.Strings;
@@ -50,6 +51,7 @@ namespace USC.GISResearchLab.Common.Addresses.AbstractClasses
         [JsonIgnore]
         public bool ExceptionOccurred { get; set; }
         [JsonIgnore]
+        [XmlIgnore]
         public Exception Exception { get; set; }
 
 
